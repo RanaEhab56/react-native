@@ -4,12 +4,12 @@ import {useNavigation} from '@react-navigation/native';
 
 
 
-const MainList = ({BLOUSES}) => {
+const MainList = ({PRODUCTS}) => {
     const navigation = useNavigation();
     const renderItem = ({item}) => (
         <View style={styles.item}>
             <Image source={{uri: item.image}}
-                   style={styles.blousePic}/>
+                   style={styles.productPic}/>
             <Text style={styles.title}>{item.title}</Text>
             <View style={styles.btnContainer}>
                 <Button
@@ -26,7 +26,7 @@ const MainList = ({BLOUSES}) => {
     return (
         <SafeAreaView style={styles.container}>
             <FlatList
-                data={BLOUSES}
+                data={PRODUCTS}
                 renderItem={renderItem}
                 keyExtractor={(item, index) => index.toString()}
             />
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
         marginLeft: 4
     },
-    blousePic: {
+    productPic: {
         width: '100%',
         height: 200,
         borderRadius: 30

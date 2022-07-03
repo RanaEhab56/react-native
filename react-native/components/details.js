@@ -6,9 +6,9 @@ export default function Details({route,navigation}) {
     return (
         <View style={styles.container}>
             <View style={styles.item}>
-          <Text style={styles.title}>Blouse Code: {item.id}</Text>
+          <Text style={styles.title}>Makeup Code: {item.id}</Text>
             <Image source={{uri: item.image}}
-                   style={styles.blousePic}/>
+                   style={styles.productPic}/>
             <Text style={styles.title}>{item.title}</Text>
                 <Text style={styles.title}>{item.description}</Text>
             </View>
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
         marginLeft: 4
     },
-    blousePic: {
+    productPic: {
         width: '100%',
         height: 200,
         borderRadius: 30

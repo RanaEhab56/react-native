@@ -3,42 +3,42 @@ import {ImageBackground, StyleSheet, Text, View} from "react-native";
 import MainList from "./mainList";
 import {StatusBar} from "expo-status-bar";
 
-const image = {uri: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"}
+const image = {uri: "https://c1.wallpaperflare.com/preview/945/664/948/cosmetics-tools-lipstick-accessories.jpg"}
 export default function Home({navigation}) {
 
-    const [blouses, setBlouses] = useState([
+    const [products, setProducts] = useState([
         {
             id: 1,
             title: 'White&Black Blouse',
             description:"some text here to descripe that awsome blouse",
-            image: 'https://images.unsplash.com/photo-1625150986010-cc136519221b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=441&q=80'
+            image: 'https://c1.wallpaperflare.com/preview/608/922/468/eye-shadow-cosmetics-color-palette-color.jpg'
 
         },
         {
             id: 2,
             title: 'White Florie Blouse',
             description:"some text here to descripe that awsome blouse",
-            image: 'https://images.unsplash.com/photo-1564257631407-4deb1f99d992?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+            image: 'https://c1.wallpaperflare.com/preview/525/746/556/manicure-pedicure-cosmetics-kosmetikstudio.jpg'
         },
         {
             id: 3,
             title: 'Red Florie Dress',
             description:"some text here to descripe that awsome blouse",
-            image: 'https://images.unsplash.com/photo-1614015822183-4f4817eb9867?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=311&q=80'
+            image: 'https://c1.wallpaperflare.com/preview/907/317/312/lipstick-pink-beauty-mac.jpg'
         }, {
             id: 4,
             title: 'Pink Blouse',
             description:"some text here to describe that awesome blouse",
-            image: 'https://images.unsplash.com/flagged/photo-1576577848480-63665b4870a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
+            image: 'https://c1.wallpaperflare.com/preview/402/407/725/beauty-cosmetic-make-up-lipstick.jpg'
         },
     ]);
 
     return (
         <View style={styles.container}>
             <ImageBackground source={image} resizeMode="cover" style={styles.image}>
-                <Text style={styles.title}>Clothes App</Text>
+                <Text style={styles.title}>Makeup App</Text>
 
-                <MainList BLOUSES={blouses}/>
+                <MainList PRODUCTS={products}/>
                 <StatusBar style="auto"/>
             </ImageBackground>
         </View>

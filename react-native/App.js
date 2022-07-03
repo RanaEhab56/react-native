@@ -14,10 +14,10 @@ export default function App() {
                 <Stack.Screen
                     name={'Home'}
                     component={Home}
-                    options={{ title: 'All-blouses' }}
+                    options={{ title: 'All-products' }}
                 />
                 <Stack.Screen name="Details"  component={Details}
-                              options={{ title: 'blouse-details ' }} />
+                              options={{ title: 'product-details ' }} />
             </Stack.Navigator>
         </NavigationContainer>
     )
